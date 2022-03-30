@@ -6,10 +6,24 @@ body{
   color: white;
 }
 
+div.displayZone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  height: 400px;
+}
+
+div.sortAndListSec{
+  display: flex;
+  flex-direction: column;
 }
 
 input.month, input.date{
@@ -18,10 +32,10 @@ input.month, input.date{
 
 div.todo{
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+/*已完成之事項，加上刪除線*/
 div.done{
   opacity: 0.3;
   text-decoration: line-through;

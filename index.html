@@ -4,22 +4,32 @@
 </head>
 <body>
   <header>
-    <h1>To do List</h1>
+    <h1>To Do List</h1>
   </header>
   
-  <!--待辦事項相關資訊的填寫表單--> 
-  <form action="">
-    <input class="content" type="text">
-    <input class="month" type="text">
-    <input class="date" type="text">
-    <button>新增</button>
-  </form>
 
-  <!--時間排序按鈕--> 
-  <div class="sort"><button class="sort">按時間排序</button></div>
+  <div class="displayZone">
+      
+      <!--待辦事項相關資訊的填寫表單--> 
+      <form action="">
+        <label for="content">待辦事項</label>
+        <input class="content" type="text">
+        <label for="month">月份</label>
+        <input class="month" type="text">
+        <label for="date">日期</label>
+        <input class="date" type="text">
+        <button class="add">新增</button>
+      </form>
 
-  <!--待辦清單-->
-  <section></section>
+    <div class="sortAndListSec">
+      <!--時間排序按鈕--> 
+      <div class="sort"><button class="sort">按時間排序</button></div>  
+
+      <!--待辦清單-->
+      <section class="listSec"></section>
+    </div>
+
+  </div>
 
   <script src="./app.js"></script>
 </body>
